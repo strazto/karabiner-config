@@ -1,0 +1,1 @@
+{"title":"Ctrl Shift Alt S to Screen Area Clipboard","rules":[{"description":"Ctrl Shift Alt S to Screen Area Clipboard","manipulators":[{"from":{"key_code":"s","modifiers":{"mandatory":["left_alt","left_shift","left_control"]}},"to":[{"key_code":"4","modifiers":["left_command","left_shift"]}],"type":"basic"}]}]}
