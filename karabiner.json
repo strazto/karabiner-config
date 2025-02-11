@@ -22,15 +22,11 @@
                         ]
                     },
                     {
-                        "description": "Shift + Caps to right_control",
+                        "description": "Caps to Right control",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "caps_lock",
-                                    "modifiers": {
-                                        "mandatory": ["left_shift"],
-                                        "optional": ["any"]
-                                    }
+                                    "key_code": "caps_lock"
                                 },
                                 "to": [
                                     {
