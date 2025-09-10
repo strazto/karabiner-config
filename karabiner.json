@@ -25,9 +25,7 @@
                         "description": "Caps to Right control",
                         "manipulators": [
                             {
-                                "from": {
-                                    "key_code": "caps_lock"
-                                },
+                                "from": { "key_code": "caps_lock" },
                                 "to": [
                                     {
                                         "key_code": "right_control",
@@ -56,6 +54,27 @@
                         "vendor_id": 1008
                     },
                     "ignore": false
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 58497,
+                        "vendor_id": 13357
+                    },
+                    "simple_modifications": [
+                        {
+                            "from": { "key_code": "caps_lock" },
+                            "to": [{ "key_code": "escape" }]
+                        },
+                        {
+                            "from": { "key_code": "escape" },
+                            "to": [{ "key_code": "grave_accent_and_tilde" }]
+                        },
+                        {
+                            "from": { "key_code": "page_up" },
+                            "to": [{ "key_code": "right_control" }]
+                        }
+                    ]
                 }
             ],
             "name": "Default profile",
