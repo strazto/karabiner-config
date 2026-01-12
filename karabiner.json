@@ -4,6 +4,38 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "Hyper Key: Caps Lock → left control + left shift + right command (⌃⇧⌘)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "hyper_caps_lock",
+                                            "value": 1
+                                        }
+                                    },
+                                    {
+                                        "key_code": "left_control",
+                                        "modifiers": ["left_shift", "right_command"]
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "set_variable": {
+                                            "name": "hyper_caps_lock",
+                                            "value": 0
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Ctrl Shift Alt S to Screen Area Clipboard",
                         "manipulators": [
                             {
@@ -23,6 +55,7 @@
                     },
                     {
                         "description": "Caps to Right control",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "caps_lock" },
